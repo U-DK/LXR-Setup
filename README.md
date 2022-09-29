@@ -24,6 +24,10 @@ Your mysql root password is "password"(without quotation marks).
 ***Apache***  
 ***LXR***  
 > http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz  
+  
 ***Linux kernel source-code***  
 > https://www.kernel.org/pub/linux/kernel/v1.0/linux-1.0.tar.xz  
+  
+  
+
 
