@@ -14,7 +14,7 @@ Because of the indexing which is a time-consuming job, I choose kernel-v1.0. It'
 ***Index searching: Glimpse-4.18.7***  
 
 ## Important notice
-Your mysql root password is "password"(without quotation marks).
+Your default mysql root password would be "password"(without quotation marks).
 
 ## Components
 ***Perl***  
