@@ -28,7 +28,7 @@ Your mysql root password is "password"(without quotation marks).
 ***Linux kernel source-code***  
 > https://www.kernel.org/pub/linux/kernel/v1.0/linux-1.0.tar.xz  
   
-## Packages name
+## Packages name(names may vary along with the version updates)
 ***build-essential***  
 ***exuberant-ctags***  
 ***glimpse***  
