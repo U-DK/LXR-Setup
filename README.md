@@ -44,7 +44,7 @@ Your mysql root password is "password"(without quotation marks).
 1. Use `sudo apt-get update` to update repository.
 2. Then `sudo apt-get update install <package name>` to install all of the packages above.
 3. Here you have a choice to make because of the access permission problem with `Apache` later.  
-###If you install into `/usr/local/share`(Because Apache can access to this folder), then you have to put `sudo` before every command thereafter except `cd`.  
-###If you install into `/home/<your username>`(Your home), then you don't have to put `sudo` but an extra step you would do at last.
+### If you install into `/usr/local/share`(Because Apache can access to this folder), then you have to put `sudo` before every command thereafter except `cd`.  
+### If you install into `/home/<your username>`(Your home), then you don't have to put `sudo` but an extra step you would do at last.
 4. Here I put those command as we are installing LXR in your home directory.
 5. 
