@@ -41,5 +41,5 @@ Your mysql root password is "password"(without quotation marks).
 ***libmysqlclient-dev***  
 
 ## Steps
-1. use > sudo apt-get update < to update repository.
+1. use ‘sudo apt-get update’ to update repository.
 2. 
