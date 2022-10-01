@@ -75,7 +75,7 @@ mv linux v1.0
 ```bash
 cd
 cd LXR/lxr-2.3.6/
-sudo ./scripts/configure-lxr.pl -vv
+./scripts/configure-lxr.pl -vv
 ```
 10. Use `https://lxr.sourceforge.io/en/1-0-InstallSteps/1-0-install3config.php` as a reference.  
 Leave most of stages default but something cautioned here:  
