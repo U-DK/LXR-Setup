@@ -74,7 +74,6 @@ mv linux v1.0
 9. Prepare to config LXR.
 ```bash
 cd
-cd /usr/local/share
 cd LXR/lxr-2.3.6/
 sudo ./scripts/configure-lxr.pl -vv
 ```
