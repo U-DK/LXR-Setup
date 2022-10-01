@@ -46,5 +46,11 @@ Your mysql root password is "password"(without quotation marks).
 3. Here you have a choice to make because of the access permission problem with `Apache` later.  
 If you install into `/usr/local/share`(Because Apache can access to this folder), then you have to put `sudo` before every command thereafter except `cd`.  
 If you install into `/home/<your username>`(Your home), then you don't have to put `sudo` but an extra step you would do at last.
-4. Here I put those command as we are installing LXR in your home directory.
-5. 
+4. Here I put those command as we are installing LXR in your home directory. So we `$cd`, which brings us into our home root: `/home/<your username>`.
+5. `$mkdir LXR`. We use this `LXR` folder as our lxr root.
+6. Download lxr package. We use version `2.3.6` to build.
+`cd LXR`
+`wget http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz`
+`tar xvf lxr-2.3.6.tgz`
+7. 
+
