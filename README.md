@@ -84,4 +84,15 @@ If you choose to install LXR into your home path at step 3, then here should be 
 `--- Source directory? (e.g. /home/myself/project-tree) >` in this stage(Need absolute path):  
 Again, if `/usr/local/share`, then `/usr/local/share/LXR/linux-source`, if home path, then `/home/<your username>/LXR/linux-source`.  
   
-``
+`--- Version name? (hit return to stop) >` in this stage, you should keep the same as the folder name you changed in `linux-source` directory. You can put as many as you can, if you want to stop, just hit `return`.  
+  
+`*** Configuring data storage` in this stage just remember the dbname, username and password you set for the lxr database.
+11. Initialize lxr database, you need to enter the password we set before: "password"(without quotation marks).
+```bash
+./custom.d/initdb.sh
+```
+12. Copy configuration file to lxr directory.
+```bash
+cp custom.d/lxr.conf .
+```
+13.  
