@@ -112,5 +112,5 @@ sudo systemctl restart apache2
 sudo chgrp www-data /home/<your username>
 sudo chmod g+x /home/<your username>
 ```
-16. OK! We are done! Just open your browser and see!
+16. OK! We are done! Just open your browser and enjoy!
 17. 
