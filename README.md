@@ -56,9 +56,9 @@ If you install into `/home/<your username>`(Your home), then you don't have to p
 7. `$mkdir LXR`. We use this `LXR` folder as our LXR root.
 8. Download LXR package. We use version `2.3.6` to build. 
 ```bash 
-$cd LXR
-$wget http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz
-$tar xvf lxr-2.3.6.tgz
+cd LXR
+wget http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz
+tar xvf lxr-2.3.6.tgz
 ```
 8. Download linux kernel. We use version `v1.0` considering the time consuming process later. You can replace it with any version you like, but don't forget changing the decompressed name to you version: `vx.xx.xxx`. We will put all of our kernel source in `linux-source`.
 ```bash 
@@ -94,4 +94,23 @@ just remember the dbname, username and password you set for the lxr database.
 ```bash
 cp custom.d/lxr.conf .
 ```
-13.  
+13. Config Apache here.(Need sudo anyway)
+```bash
+sudo cp custom.d/apache-lxrserver.conf /etc/apache2/conf-available
+sudo a2enconf apache-lxrserver.conf
+sudo a2dismod mpm*
+sudo a2enmod mpm_worker
+sudo systemctl reload apache2
+sudo systemctl restart apache2
+```
+14. Now we are going to have the most time-consuming job here: Indexing. We should index and reference those kernel sources. `--version=` accepts the version name we set before, remember the step 8? If you have a different one, just put it in. Just wait until the indexing is done.
+```bash
+./genxref --url=http://localhost/lxr --version=v1.0
+```
+15. Those who install LXR into `/usr/local/share`, you may open your browser and visit http://localhost/lxr/source. Again, don't forget put `sudo` before your commands. If you chose to install LXR into your home path like me, then we have the last one to do.
+```bash
+sudo chgrp www-data /home/<your username>
+sudo chmod g+x /home/<your username>
+```
+16. OK! We are done! Just open your browser and see!
+17. 
