@@ -75,8 +75,8 @@ cd /usr/local/share
 cd LXR/lxr-2.3.6/
 sudo ./scripts/configure-lxr.pl -vv
 ```
-10. Use `https://lxr.sourceforge.io/en/1-0-InstallSteps/1-0-install3config.php` as a reference.
-Some caution here:
+10. Use `https://lxr.sourceforge.io/en/1-0-InstallSteps/1-0-install3config.php` as a reference.  
+Some caution here:  
 `--- Directory for glimpse databases? >` in this stage(Need absolute path):  
 If you choose to install LXR into `/usr/local/share` at step 3, then here should be `/usr/local/share/LXR/<your DIY dir>`(Because we mkdir LXR before).  
 If you choose to install LXR into your home path at step 3, then here should be `/home/<your username>/LXR/<your DIY dir>`.  
