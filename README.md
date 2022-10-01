@@ -105,7 +105,7 @@ sudo a2enmod mpm_worker
 sudo systemctl reload apache2
 sudo systemctl restart apache2
 ```
-14. Now we are going to have the most time-consuming job here: Indexing. We should index and reference those kernel sources. `--version=` accepts the version name we set before, remember the step 8? If you have a different one, just put it in. Just wait until the indexing is done.
+14. Now we are going to have the most time-consuming job here: Indexing. We should index and reference those kernel sources. `--version=` accepts the version name we set before, remember the step 8? If you have a different one, just put it in and remember the dir format `vx.xx.xxx`. Just wait until the indexing is done.
 ```bash
 ./genxref --url=http://localhost/lxr --version=v1.0
 ```
