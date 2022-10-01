@@ -5,7 +5,8 @@
 This introduction will help you install LXR on your Ubuntu.
 Because of the indexing which is a time-consuming job, I choose kernel-v1.0. It's small so that we can index that fast. Of course you can change it to any version like ***v6.0-rc6*** which is the latest version when I am writing this.
 
-### P.S. I also put bash files there, which can help you install the LXR automatically but with a little bit manual setup.
+### P.S.
+I have put bash files there, which can help you install the LXR automatically but with a little bit manual setup.
 
 ## Environment overview
 ***Test environment: Ubuntu 22.0.4***  
