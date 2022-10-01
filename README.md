@@ -13,7 +13,7 @@ Because of the indexing which is a time-consuming job, I choose kernel-v1.0. It'
 ***Database: MySQL***  
 ***Index searching: Glimpse-4.18.7***  
 
-## Important Notice
+## Important notice
 Your mysql root password is "password"(without quotation marks).
 
 ## Components
