@@ -51,11 +51,11 @@ printf '%s\n' "password" n n n n y | sudo mysql_secure_installation
 ```
 4. Here you have a choice to make because of the access permission problem with `Apache` later.  
 If you install into `/usr/local/share`(Because Apache can access to this folder), then you have to put `sudo` before every command thereafter except `cd`.  
-
 If you install into `/home/<your username>`(Your home), then you don't have to put `sudo` but an extra step you would do at last.
 5. Here I put those command as we are installing LXR in your home directory. So we `$cd`, which brings us into our home root: `/home/<your username>`.
-6. `$mkdir LXR`. We use this `LXR` folder as our LXR root.
-7. Download LXR package. We use version `2.3.6` to build. 
+6. 
+7. `$mkdir LXR`. We use this `LXR` folder as our LXR root.
+8. Download LXR package. We use version `2.3.6` to build. 
 ```bash 
 $cd LXR
 $wget http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz
