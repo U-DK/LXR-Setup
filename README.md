@@ -44,7 +44,7 @@ Your mysql root password is "password"(without quotation marks).
 ## Steps
 1. Use `sudo apt-get update` to update repository.
 2. Then `sudo apt-get update install <package name>` to install all of the packages above.
-3. An error will occur when you run the `mysql_secure_installation` script without some further configuration. So we have to fix this first. For more details, visit > https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04
+3. An error will occur when you run the `mysql_secure_installation` script without some further configuration. So we have to fix this first. For more details, visit https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04
 ```bash
 sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';"
 printf '%s\n' "password" n n n n y | sudo mysql_secure_installation
