@@ -63,7 +63,7 @@ cd LXR
 wget http://sourceforge.net/projects/lxr/files/stable/lxr-2.3.6.tgz
 tar xvf lxr-2.3.6.tgz
 ```
-8. Download linux kernel. We use version `v1.0` considering the time consuming process later. You can replace it with any version you like, but don't forget changing the decompressed name to you version: `vx.xx.xxx`. We will put all of our kernel source in `linux-source`.
+8. Download linux kernel. We use version `v1.0` considering the time consuming process later. You can replace it with any version you like, but don't forget changing the decompressed name to you version: `vx.xx.xxx`. We will put all of our kernel sources in `linux-source`.
 ```bash 
 mkdir linux-source
 cd linux-source
